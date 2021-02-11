@@ -23,7 +23,7 @@ import './index.css';
 import nodes from './Nodes.js';
 import 'react-flow-renderer/dist/style.css';
 
-const graphStyles = { width: '100%', height: '600px' };
+const graphStyles = { width: '100%', height: '1000px' };
 
 const FlowChart = () =>    <ReactFlow 
                             elements={nodes}
