@@ -1,0 +1,16 @@
+.react-flow {
+    background: #fffff2;
+}
+
+.react-flow__nodes {
+    color: rgb(150, 0, 209)
+}
+
+.phase {
+    background: "#676f72";
+    width: 100;
+    color: "#fffff";
+    font-size: "14px";
+    font-family: "Helvetica";
+    box-shadow: "5px 5px 5px 0px rgba(0,0,0,.50)";
+}
