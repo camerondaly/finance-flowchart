@@ -101,7 +101,7 @@ const nodes = [
       data: { label: 'Step 6: Additional goals and advanced methods' }, 
       position: { x: 1200, y: 5 }, 
       style: {
-        background: "rgb(150, 0, 209)",
+        background: "rgb(201, 137, 226)",
         width: 130,
         height: 50,
         fontSize: "16px",
@@ -325,11 +325,131 @@ const nodes = [
   { 
     id: 'vertical-14', 
     sourcePosition: 'bottom',
-    targetPosition: 'left', 
+    targetPosition: 'top', 
     data: { label: 'Does your employer offer a 403b or 401k retirement account? Or, do you have access to and Individual 401k?' }, 
-    position: { x: 600, y: 1450 }, 
+    position: { x: 600, y: 1400 }, 
     style: {
       background: "rgb(0, 110, 255)",
+      width: 200,
+      height: 80,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-15', 
+    sourcePosition: 'bottom',
+    targetPosition: 'top', 
+    data: { label: "Increase contributions until 15% of pre-tax income is saved for retirement" }, 
+    position: { x: 400, y: 1550 }, 
+    style: {
+      background: "rgb(0, 110, 255)",
+      width: 200,
+      height: 50,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-16', 
+    sourcePosition: 'bottom',
+    targetPosition: 'top', 
+    data: { label: 'Increase investments in a taxable account until 15% of pre-tax income is being saved for retirement' }, 
+    position: { x: 800, y: 1550 }, 
+    style: {
+      background: "rgb(0, 110, 255)",
+      width: 200,
+      height: 80,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-17', 
+    sourcePosition: 'right',
+    targetPosition: 'top', 
+    data: { label: "Max yearly HSA contributions, if applicable" }, 
+    position: { x: 200, y: 1670 }, 
+    style: {
+      background: "rgb(201, 137, 226)",
+      width: 200,
+      height: 50,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'horizontal-18', 
+    sourcePosition: 'bottom',
+    targetPosition: 'left', 
+    data: { label: "Do you have children?" }, 
+    position: { x: 550, y: 1670 }, 
+    style: {
+      background: "rgb(201, 137, 226)",
+      width: 200,
+      height: 50,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-19', 
+    sourcePosition: 'right',
+    targetPosition: 'top', 
+    data: { label: "Evaluate the merits of a 529 savgings plan and contribute accordingly" }, 
+    position: { x: 550, y: 1800 }, 
+    style: {
+      background: "rgb(201, 137, 226)",
+      width: 200,
+      height: 50,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'horizontal-20', 
+    sourcePosition: 'bottom',
+    targetPosition: 'top', 
+    data: { label: "Do you want to retire early?" }, 
+    position: { x: 200, y: 1900 }, 
+    style: {
+      background: "rgb(201, 137, 226)",
+      width: 200,
+      height: 50,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-21', 
+    sourcePosition: 'bottom',
+    targetPosition: 'top', 
+    data: { label: "Maximize 401k/403b contributions and consider a 'backdoor' Roth IRA. Contribute to a taxable account." }, 
+    position: { x: 400, y: 2020 }, 
+    style: {
+      background: "rgb(0, 110, 255)",
+      width: 200,
+      height: 100,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-22', 
+    sourcePosition: 'bottom',
+    targetPosition: 'top', 
+    data: { label: "Use a savings account and a conservative mix of stocks and bonds for savings in excess of retirement" }, 
+    position: { x: 200, y: 2170 }, 
+    style: {
+      background: "rgb(201, 137, 226)",
       width: 200,
       height: 80,
       fontSize: "16px",
@@ -517,6 +637,61 @@ const nodes = [
       label: '', 
       source: 'vertical-9', 
       target: 'vertical-10', 
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e10-11',
+      label: '', 
+      source: 'vertical-10', 
+      target: 'vertical-11',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e11-12',
+      label: 'yes', 
+      source: 'vertical-11', 
+      target: 'vertical-12',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e11-13',
+      label: 'no', 
+      source: 'vertical-11', 
+      target: 'vertical-13',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e12-13',
+      label: '', 
+      source: 'vertical-12', 
+      target: 'vertical-13',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e13-17',
+      label: 'yes', 
+      source: 'vertical-13', 
+      target: 'vertical-17',
       animated: true,
       arrowHeadType: 'arrowclosed',
       labelStyle: {
