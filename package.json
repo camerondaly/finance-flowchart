@@ -1,5 +1,5 @@
 {
-  "homepage": "https://camerondaly.github.io/finance-flowchart/",
+  "homepage": "https://camerondaly.github.io/finance-flowchart",
   "name": "personal-finance",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeloy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
