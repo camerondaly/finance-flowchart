@@ -5,6 +5,20 @@ const nodes = [
     // OVERVIEW
 
     { 
+      id: 'horizontal-0', 
+      sourcePosition: 'right',
+      targetPosition: 'left',
+      data: { label: 'Overview:' }, 
+      position: { x: -200, y: 5 },
+      style: {
+        width: 130,
+        height: 50,
+        fontSize: "16px",
+        fontFamily: "poppins",
+        boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+      },
+    },
+    { 
       id: 'horizontal-1', 
       sourcePosition: 'right',
       targetPosition: 'left',
@@ -160,7 +174,7 @@ const nodes = [
     { 
       id: 'vertical-3', 
       sourcePosition: 'right',
-      targetPosition: 'left',
+      targetPosition: 'top',
       data: { label: "Does your employer offer a match on your retirement account contributions?" }, 
       position: { x: 200, y: 500 }, 
       style: {
@@ -372,7 +386,7 @@ const nodes = [
     sourcePosition: 'right',
     targetPosition: 'top', 
     data: { label: "Max yearly HSA contributions, if applicable" }, 
-    position: { x: 200, y: 1670 }, 
+    position: { x: 200, y: 1680 }, 
     style: {
       background: "rgb(201, 137, 226)",
       width: 200,
@@ -383,11 +397,11 @@ const nodes = [
     },
   },
   { 
-    id: 'horizontal-18', 
+    id: 'vertical-18', 
     sourcePosition: 'bottom',
     targetPosition: 'left', 
     data: { label: "Do you have children?" }, 
-    position: { x: 550, y: 1670 }, 
+    position: { x: 550, y: 1680 }, 
     style: {
       background: "rgb(201, 137, 226)",
       width: 200,
@@ -399,10 +413,10 @@ const nodes = [
   },
   { 
     id: 'vertical-19', 
-    sourcePosition: 'right',
+    sourcePosition: 'bottom',
     targetPosition: 'top', 
-    data: { label: "Evaluate the merits of a 529 savgings plan and contribute accordingly" }, 
-    position: { x: 550, y: 1800 }, 
+    data: { label: "Evaluate the merits of a 529 savings plan and contribute accordingly" }, 
+    position: { x: 610, y: 1800 }, 
     style: {
       background: "rgb(201, 137, 226)",
       width: 200,
@@ -413,7 +427,7 @@ const nodes = [
     },
   },
   { 
-    id: 'horizontal-20', 
+    id: 'vertical-20', 
     sourcePosition: 'bottom',
     targetPosition: 'top', 
     data: { label: "Do you want to retire early?" }, 
@@ -457,10 +471,46 @@ const nodes = [
       boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
     },
   },
+  { 
+    id: 'vertical-23',
+    targetPosition: 'top', 
+    data: { label: "Enjoy peace of mind from your optimal financial planning!" }, 
+    position: { x: 400, y: 2400 }, 
+    style: {
+      background: "rgb(201, 137, 226)",
+      width: 250,
+      height: 50,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+  { 
+    id: 'vertical-24', 
+    sourcePosition: 'bottom', 
+    data: { label: "Set off on the path to financial success:" }, 
+    position: { x: 200, y: 120 }, 
+    style: {
+      background: "",
+      width: 200,
+      height: 35,
+      fontSize: "16px",
+      fontFamily: "poppins",
+      boxShadow: "5px 5px 5px 0px rgba(0,0,0,.50)"
+    },
+  },
+
 
 
     // EDGES  
 
+    { 
+      id: 'horizontal-e0-1', 
+      source: 'horizontal-0', 
+      target: 'horizontal-1', 
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+    },
     { 
       id: 'horizontal-e1-2', 
       source: 'horizontal-1', 
@@ -692,6 +742,160 @@ const nodes = [
       label: 'yes', 
       source: 'vertical-13', 
       target: 'vertical-17',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e13-14',
+      label: 'no', 
+      source: 'vertical-13', 
+      target: 'vertical-14',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e14-15',
+      label: 'yes', 
+      source: 'vertical-14', 
+      target: 'vertical-15',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e14-16',
+      label: 'no', 
+      source: 'vertical-14', 
+      target: 'vertical-16',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e15-17',
+      label: '', 
+      source: 'vertical-15', 
+      target: 'vertical-17',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e16-17',
+      label: '', 
+      source: 'vertical-16', 
+      target: 'vertical-17',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e17-18',
+      label: '', 
+      source: 'vertical-17', 
+      target: 'vertical-18',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e18-19',
+      label: 'yes', 
+      source: 'vertical-18', 
+      target: 'vertical-19',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e18-20',
+      label: 'no', 
+      source: 'vertical-18', 
+      target: 'vertical-20',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e19-20',
+      label: '', 
+      source: 'vertical-19', 
+      target: 'vertical-20',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e20-21',
+      label: 'yes', 
+      source: 'vertical-20', 
+      target: 'vertical-21',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e20-22',
+      label: 'no', 
+      source: 'vertical-20', 
+      target: 'vertical-22',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e21-22',
+      label: '', 
+      source: 'vertical-21', 
+      target: 'vertical-22',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e22-23',
+      label: 'Congratulations!', 
+      source: 'vertical-22', 
+      target: 'vertical-23',
+      animated: true,
+      arrowHeadType: 'arrowclosed',
+      labelStyle: {
+        fontSize: '14px',
+      }
+    },
+    {
+      id: 'vertical-e24-0',
+      label: '', 
+      source: 'vertical-24', 
+      target: 'vertical-0',
       animated: true,
       arrowHeadType: 'arrowclosed',
       labelStyle: {
